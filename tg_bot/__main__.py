@@ -145,8 +145,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                        url="t.me/arroww_xd")],
                                                                                    [InlineKeyboardButton(text="ADD TEAMRI TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Source Code",
-                                                                       url="t.me/x_vip_only")
+                                                                                   InlineKeyboardButton(text="UPDATES",
+                                                                       url="t.me/temari_news")
                                                                                  ]]))
 
     else:
