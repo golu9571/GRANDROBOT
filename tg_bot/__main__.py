@@ -148,9 +148,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                    InlineKeyboardButton(text="🔸UPDATES🔸",
                                                                        url="t.me/temari_news")],
                                                                                    InlineKeyboardButton(text="🔸UPDATES🔸",
-                                                                       url="t.me/temari_news")       
-                                                                         
-                                                                                 ]]))
+                                                                       url="t.me/temari_news")]     
+                                                                                         ]]))
 
     else:
         update.effective_message.reply_text("JINDA HU VRO 😁😁")
