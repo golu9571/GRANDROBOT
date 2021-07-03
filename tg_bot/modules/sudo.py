@@ -13,7 +13,7 @@ from tg_bot.modules.helper_funcs.chat_status import bot_admin
 
 @bot_admin
 @run_async
-def lodupromote(bot: Bot, update: Update, args: List[str]):
+def sudopromote(bot: Bot, update: Update, args: List[str]):
     message = update.effective_message
     banner = update.effective_user
     user_id = extract_user(message, args)
@@ -71,13 +71,13 @@ def sudodemote(bot: Bot, update: Update, args: List[str]):
 
 __help__ = """
 *Bot owner only:*
- - /lodupromote: promotes the user to SUDO USER
+ - /sudopromote: promotes the user to SUDO USER
  - /sudodemote: demotes the user from SUDO USER
 """
 
 __mod_name__ = "SUDO"
 
-SUDOPROMOTE_HANDLER = CommandHandler("SUDOPROMOTE", SUDOPROMOTE, pass_args=True, filters=Filters.user(OWNER_ID))
+SUDOPROMOTE_HANDLER = CommandHandler("sudopromote", sudopromote, pass_args=True, filters=Filters.user(OWNER_ID))
 SUDODEMOTE_HANDLER = CommandHandler("sudodemote", sudodemote, pass_args=True, filters=Filters.user(OWNER_ID))
 
 dispatcher.add_handler(SUDOPROMOTE_HANDLER)
