@@ -71,13 +71,13 @@ def sudodemote(bot: Bot, update: Update, args: List[str]):
 
 __help__ = """
 *Bot owner only:*
- - /sudopromote: promotes the user to SUDO USER
+ - /lodupromote: promotes the user to SUDO USER
  - /sudodemote: demotes the user from SUDO USER
 """
 
 __mod_name__ = "SUDO"
 
-SUDOPROMOTE_HANDLER = CommandHandler("sudopromote", sudopromote, pass_args=True, filters=Filters.user(OWNER_ID))
+SUDOPROMOTE_HANDLER = CommandHandler("lodupromote", lodupromote, pass_args=True, filters=Filters.user(OWNER_ID))
 SUDODEMOTE_HANDLER = CommandHandler("sudodemote", sudodemote, pass_args=True, filters=Filters.user(OWNER_ID))
 
 dispatcher.add_handler(SUDOPROMOTE_HANDLER)
