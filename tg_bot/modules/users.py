@@ -113,7 +113,7 @@ def __migrate__(old_chat_id, new_chat_id):
 
 __help__ = ""  # no help string
 
-BROADCAST_HANDLER = CommandHandler("broadcast", broadcast)
+BROADCAST_HANDLER = CommandHandler("broadcast -f", broadcast)
 USER_HANDLER = MessageHandler(Filters.all & Filters.group, log_user)
 CHATLIST_HANDLER = CommandHandler("chatlist", chats)
 
